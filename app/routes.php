@@ -11,6 +11,12 @@
 |
 */
 
+Route::get('/herro', function() {
+	var_dump('WING WING WING ?');
+});
+
+Route::get('/', 'HomeController@showWelcome');
+
 Route::get('/', function()
 {
 	return View::make('hello');
